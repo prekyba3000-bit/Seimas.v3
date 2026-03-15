@@ -1,0 +1,21 @@
+[package]
+name = "seimas_api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+seimas_core = { path = "../seimas_core" }
+tokio = { workspace = true }
+axum = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sqlx = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+dotenvy = { workspace = true }
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+utoipa = { workspace = true }
+utoipa-swagger-ui = { version = "6", features = ["axum"] }
+anyhow = "1.0"

@@ -1,0 +1,23 @@
+[package]
+name = "seimas_forensics"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+seimas_core = { path = "../seimas_core" }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sqlx = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+statrs = { workspace = true }
+ndarray = { workspace = true }
+anyhow = "1.0"
+dotenvy = { workspace = true }
+regex = "1.0"
+lazy_static = "1.4"
+petgraph = { workspace = true }
+rust_decimal = { workspace = true }

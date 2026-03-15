@@ -1,0 +1,21 @@
+[package]
+name = "seimas_ingest"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+seimas_core = { path = "../seimas_core" }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sqlx = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+reqwest = { workspace = true }
+quick-xml = { workspace = true }
+dotenvy = { workspace = true }
+unidecode = "0.3"
+futures = "0.3"
+anyhow = "1.0"

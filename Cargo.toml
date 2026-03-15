@@ -1,0 +1,30 @@
+[workspace]
+members = [
+    "crates/seimas_core",
+    "crates/seimas_api",
+    "crates/seimas_ingest",
+    "crates/seimas_forensics",
+]
+resolver = "2"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+axum = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.7", features = ["runtime-tokio", "tls-rustls", "postgres", "uuid", "chrono", "json"] }
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.0", features = ["serde", "v4"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+reqwest = { version = "0.11", features = ["json"] }
+quick-xml = { version = "0.31", features = ["serialize"] }
+config = "0.14"
+dotenvy = "0.15"
+image = "0.24"
+ab_glyph = "0.2"
+ndarray = "0.15"
+statrs = "0.16"
+petgraph = "0.6"
+utoipa = { version = "4", features = ["axum_extras"] }
+rust_decimal = { version = "1.0", features = ["serde-float"] }
